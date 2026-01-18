@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-
+import AllBirds from "../../public/All-Birds.png"
+import Calculator from "../../public/Calculator.png"
+import Carrentol from "../../public/Carrentol.jpg"
+import Fanta from "../../public/Fanta.png"
+import QuickShow from "../../public/QuickShow.png"
+import Watherapp from "../../public/Watherapp.png"
 const categories = [
   "All",
   "Website Design",
@@ -14,42 +19,42 @@ const projects = [
     id: 1,
     name: "Car-Rentol",
     category: "Website Design",
-    image: "../../public/carrentol.jpg",
+    image: Carrentol,
     link: "https://car-rental-gules-chi.vercel.app/",
   },
   {
     id: 2,
     name: "Weather-app",
     category: "Task",
-    image: "../../public/Watherapp.png",
+    image: Watherapp,
     link: "https://wather-app-olive.vercel.app/",
   },
   {
     id: 3,
     name: "Fanta-Page",
     category: "Animation",
-    image: "../../public/Fanta.png",
+    image: Fanta,
     link: "https://animation-website-ten-gilt.vercel.app/",
   },
   {
     id: 4,
     name: "QuickShow",
     category: "Website Design",
-    image: "../../public/QuickShow.png",
+    image: QuickShow,
     link: "https://quick-show-iota.vercel.app/",
   },
   {
     id: 5,
     name: "Calculator",
     category: "Task",
-    image: "../../public/Calculator.png",
+    image: Calculator,
     link: "https://calculator-green-alpha.vercel.app/",
   },
   {
     id: 6,
     name: "All-Birds",
     category: "Website Design",
-    image: "../../public/All-Birds.png",
+    image: AllBirds,
     link: "https://all-birds-two.vercel.app/",
   },
  
