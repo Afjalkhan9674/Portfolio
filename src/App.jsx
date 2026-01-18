@@ -9,6 +9,7 @@ import About from "./components/About";
 import Project from "./components/Project";
 import BackToTop from "./components/BackToTop";
 import profile from "../public/profile.png"
+import GlobalClickGlow from "./components/GlobalClickGlow";
 
 function App() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <>
+    <GlobalClickGlow />
     <Navbar />
 
       <main className="pt-20">
