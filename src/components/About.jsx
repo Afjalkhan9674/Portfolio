@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FiDownload } from "react-icons/fi";
+import profile from "./assets/profile.png"
+
 
 const skills = [
     { name: "HTML & CSS", level: 100, short: "HC" },
@@ -72,7 +74,7 @@ const About = () => {
                     <div className="flex justify-center">
                         <div className="w-64 h-80 md:w-72 md:h-[22rem] rounded-3xl overflow-hidden">
                             <img
-                                src="/src/assets/profile.png"
+                                src={profile}
                                 alt="Profile"
                                 className="w-full h-full object-cover grayscale"
                             />
