@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import AllBirds from "../../public/All-Birds.png"
-import Calculator from "../../public/Calculator.png"
-import Carrentol from "../../public/Carrentol.jpg"
-import Fanta from "../../public/Fanta.png"
-import QuickShow from "../../public/QuickShow.png"
-import Watherapp from "../../public/Watherapp.png"
+import AllBirds from "../assets/projects/All-Birds.png";
+import Calculator from "../assets/projects/Calculator.png";
+import Carrentol from "../assets/projects/Carrentol.jpg";
+import Fanta from "../assets/projects/Fanta.png";
+import QuickShow from "../assets/projects/QuickShow.png";
+import Watherapp from "../assets/projects/Watherapp.png";
+
 const categories = [
   "All",
   "Website Design",
