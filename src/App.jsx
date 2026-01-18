@@ -8,7 +8,7 @@ import Contact from "./components/Contect";
 import About from "./components/About";
 import Project from "./components/Project";
 import BackToTop from "./components/BackToTop";
-import profile from "./assets/profile.png"
+import profile from "../public/profile.png"
 
 function App() {
   const location = useLocation();

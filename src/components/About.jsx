@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FiDownload } from "react-icons/fi";
-import profile from "../assets/profile.png"
+import profile from "../../public/profile.png"
 
 
 const skills = [
