@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa"
 
 const Hero = ({ portrait }) => {
   return (
-    <header className="w-full bg-[#0f0f0f] text-white py-32 max-[600px]:py-20">
+    <header className="w-full bg-[#0f0f0f] text-white py-32 max-[600px]:py-30">
       <div className="max-w-7xl mx-auto px-6 max-[600px]:px-4 grid md:grid-cols-2 gap-12 items-center">
 
         {/* LEFT CONTENT */}
