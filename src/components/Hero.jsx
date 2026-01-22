@@ -73,17 +73,17 @@ const Hero = ({ portrait }) => {
           {/* STATS */}
           <div className="mt-14 bg-[#0a0a0a] border border-[#1f1f1f] p-5 rounded-lg flex gap-6 max-[600px]:flex-col">
             <div className="flex-1 text-center">
-              <div className="text-[#FD6F00] font-bold text-lg">5+</div>
+              <div className="text-[#FD6F00] font-bold text-lg">1+</div>
               <div className="text-sm text-gray-400">Training</div>
             </div>
 
             <div className="flex-1 text-center border-l border-r border-[#1f1f1f] max-[600px]:border-none">
-              <div className="text-[#FD6F00] font-bold text-lg">20+</div>
+              <div className="text-[#FD6F00] font-bold text-lg">2+</div>
               <div className="text-sm text-gray-400">Projects Done</div>
             </div>
 
             <div className="flex-1 text-center">
-              <div className="text-[#FD6F00] font-bold text-lg">80+</div>
+              <div className="text-[#FD6F00] font-bold text-lg">🥱</div>
               <div className="text-sm text-gray-400">Happy Clients</div>
             </div>
           </div>
