@@ -89,7 +89,8 @@ const About = () => {
 
                         <div className="pt-4">
                             <a
-                                href="#"
+                                href="https://drive.google.com/uc?export=download&id=1Xcb3ZPoq4lQ_5OHDNx4K5RKLaQm9v0Z9
+"
                                 className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold transition"
                             >
                                 <FiDownload />
