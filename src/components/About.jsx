@@ -4,11 +4,11 @@ import profile from "../../public/profile.png"
 
 
 const skills = [
-    { name: "HTML & CSS", level: 100, short: "HC" },
-    { name: "JavaScript", level: 95, short: "JS" },
-    { name: "React.js", level: 90, short: "R" },
-    { name: "Node & Express", level: 85, short: "N" },
-    { name: "MySQL / MongoDB", level: 80, short: "DB" },
+    { name: "HTML & CSS", level: 80, short: "HC" },
+    { name: "JavaScript", level: 75, short: "JS" },
+    { name: "React.js", level: 80, short: "R" },
+    { name: "Node & Express", level: 50, short: "N" },
+    { name: "MySQL / MongoDB", level: 60, short: "DB" },
 ];
 
 const About = () => {
@@ -16,7 +16,6 @@ const About = () => {
     const [progress, setProgress] = useState(skills.map(() => 0));
     const [started, setStarted] = useState(false);
 
-    // 🔥 start animation when section visible
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -32,9 +31,8 @@ const About = () => {
         return () => observer.disconnect();
     }, [started]);
 
-    // 🎯 animate ring + number (0 → target)
     const animateSkills = () => {
-        const duration = 2500; // 2.5 seconds
+        const duration = 2500; 
         const startTime = performance.now();
 
         const animate = (time) => {
@@ -59,7 +57,7 @@ const About = () => {
         <section className="min-h-screen w-full bg-black text-gray-200 flex items-center justify-center px-4 py-12">
             <div className="max-w-6xl w-full border border-dashed border-gray-700 rounded-2xl px-6 py-10 md:px-10 md:py-14 bg-[#050505]">
 
-                {/* heading */}
+                
                 <div className="text-center">
                     <h2 className="text-2xl md:text-3xl font-semibold">
                         About Me
@@ -69,7 +67,6 @@ const About = () => {
                     </p>
                 </div>
 
-                {/* top content */}
                 <div className="mt-10 grid gap-10 md:grid-cols-2 items-center">
                     <div className="flex justify-center">
                         <div className="w-64 h-80 md:w-72 md:h-[22rem] rounded-3xl overflow-hidden">
@@ -100,16 +97,16 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* ===== SKILLS ===== */}
+            
                 <div
                     ref={skillsRef}
                     className="mt-10 md:mt-12 grid gap-8 sm:grid-cols-3 md:grid-cols-5"
                 >
                     {skills.map((skill, index) => (
                         <div key={skill.name} className="flex flex-col items-center">
-                            {/* ring */}
+                            
                             <div className="relative w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center">
-                                {/* animated arc */}
+                                
                                 <div
                                     className="absolute inset-0 rounded-full"
                                     style={{
@@ -120,10 +117,10 @@ const About = () => {
                                     }}
                                 ></div>
 
-                                {/* thickness same */}
+                                
                                 <div className="absolute inset-[6px] rounded-full bg-[#050505]"></div>
 
-                                {/* center */}
+                                
                                 <div className="relative w-12 h-12 rounded-full bg-[#111] flex items-center justify-center">
                                     <span className="text-sm font-semibold">
                                         {skill.short}
@@ -131,7 +128,7 @@ const About = () => {
                                 </div>
                             </div>
 
-                            {/* animated number */}
+                            
                             <p className="mt-3 text-xs md:text-sm font-semibold">
                                 {progress[index]}%
                             </p>
